@@ -1,0 +1,27 @@
+# Ignore build files
+.gradle/
+build/
+**/build/
+
+# Local SDK and keystore
+local.properties
+*.jks
+
+# IDE settings
+.idea/
+*.iml
+
+# OS/system generated
+.DS_Store
+Thumbs.db
+
+# Binary files
+*.apk
+*.aab
+
+# CMake and NDK
+.cxx/
+
+# Logs and temp
+*.log
+*.tmp

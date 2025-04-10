@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/black"
+    android:padding="@dimen/_16sdp">
+
+    <!-- Splash Screen Branding -->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="App Logo" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vyorius RTSP Player"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_14sdp" />
+
+    <!-- URL Input -->
+    <EditText
+        android:id="@+id/et_rtsp_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter RTSP URL (e.g., rtsp://...)"
+        android:inputType="textUri"
+        android:imeOptions="actionDone"
+        android:textColor="@android:color/white"
+        android:textColorHint="#B0FFFFFF"
+        android:layout_marginTop="@dimen/_28sdp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginTop="@dimen/_13sdp" />
+
+</LinearLayout>
